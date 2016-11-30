@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12-jun-2016 12:16:23 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="clases.Puntajes" table="puntajes" catalog="triviasbd" optimistic-lock="version">
+        <id name="idPuntaje" type="java.lang.Integer">
+            <column name="ID_Puntaje" />
+            <generator class="identity" />
+        </id>
+        <property name="idUsuario" type="int">
+            <column name="ID_Usuario" not-null="true" />
+        </property>
+        <property name="idTrivia" type="int">
+            <column name="ID_Trivia" not-null="true" />
+        </property>
+        <property name="puntaje" type="double">
+            <column name="Puntaje" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="fecha" type="date">
+            <column name="Fecha" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

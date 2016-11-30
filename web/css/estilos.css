@@ -1,0 +1,109 @@
+.fondoColor0 { background-color: rgba( 83,166,190,1) }
+.fondoColor1 { background-color: rgba(175,224,238,1) }
+.fondoColor2 { background-color: rgba(124,195,216,1) }
+.fondoColor3 { background-color: rgba( 52,137,161,1) }
+.fondoColor4 { background-color: rgba( 27,119,145,1) }
+.fondoColorRojo { background-color: crimson; }
+.fondoColorTransparente { background-color: rgba( 83,166,190,0.85) }
+.fondoColorTransparente2 { background-color: rgba( 52,137,161,0.85) }
+
+
+.textoColor0 { color: rgba( 83,166,190,1) }
+.textoColor1 { color: rgba(175,224,238,1) }
+.textoColor2 { color: rgba(124,195,216,1) }
+.textoColor3 { color: rgba( 52,137,161,1) }
+.textoColor4 { color: rgba( 27,119,145,1) }
+
+#imagenLogo
+{
+    padding: 20px;
+}
+
+html
+{
+    position: relative;
+    min-height: 100%;
+}
+body 
+{
+    
+  /* Nos aseguramos que la imagen de fondo este centrada vertical y
+    horizontalmente en todo momento */
+  background-position: center center;
+
+  /* La imagen de fondo no se repite */
+  background-repeat: no-repeat;
+
+  /* La imagen de fondo está fija en el viewport, de modo que no se mueva cuando
+     la altura del contenido supere la altura de la imagen. */
+  background-attachment: fixed;
+
+  /* La imagen de fondo se reescala cuando se cambia el ancho de ventana
+     del navegador */
+  background-size: cover;
+
+  /* Fijamos un color de fondo para que se muestre mientras se está
+    cargando la imagen de fondo o si hay problemas para cargarla  */
+  background-color: white;
+  
+  color: white;
+}
+
+select, button
+{
+    color: black;
+    font-size: 24px;
+}
+
+.container
+{
+    overflow: hidden;
+}
+
+aside, article {
+    padding-bottom: 30000px;
+    margin-bottom: -30000px; 
+}
+
+footer
+{
+   bottom: 0;
+   position: relative;
+}
+
+aside p
+{
+    text-align: left;
+    font-size: 20px;
+}
+
+ol
+{
+    list-style: none;
+    text-align: left;
+}
+
+#actual
+{
+    font-weight: bolder;
+    background-color: rgba(124,195,216,1);
+}
+
+.cajaPregunta
+{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.listaOpciones
+{
+    font-size: 20px;
+    text-align: left;
+}
+
+input[type=radio]
+{
+    width: 50px;
+    cursor: pointer;
+}
+

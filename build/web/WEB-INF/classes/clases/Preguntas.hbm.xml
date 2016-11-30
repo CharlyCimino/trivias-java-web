@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12-jun-2016 12:16:23 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="clases.Preguntas" table="preguntas" catalog="triviasbd" optimistic-lock="version">
+        <id name="idPregunta" type="java.lang.Integer">
+            <column name="ID_Pregunta" />
+            <generator class="identity" />
+        </id>
+        <property name="idTrivia" type="int">
+            <column name="ID_Trivia" not-null="true" />
+        </property>
+        <property name="enunciado" type="string">
+            <column name="Enunciado" length="50" not-null="true" />
+        </property>
+        <property name="area" type="string">
+            <column name="Area" length="20" not-null="true" />
+        </property>
+        <property name="tema" type="string">
+            <column name="Tema" length="20" not-null="true" />
+        </property>
+        <property name="curso" type="string">
+            <column name="Curso" length="10" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
